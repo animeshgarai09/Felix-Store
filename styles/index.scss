@@ -1,0 +1,212 @@
+@import "../utils/functions.scss";
+
+.main {
+    margin: 1rem;
+}
+
+.slider {
+    background: url("/images/slider-2.png");
+    height: 26rem;
+    border-radius: rem(30);
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 0;
+    .content {
+        margin-left: 3rem;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+        color: var(--gray-2);
+    }
+    &__icon {
+        position: absolute;
+        display: inline-flex;
+        width: 2.3rem;
+        justify-content: center;
+        height: 2.3rem;
+        color: var(--gray-2);
+        align-items: center;
+        border-radius: 50%;
+        background: var(--yellow-light);
+        &.left {
+            left: rem(25);
+        }
+        &.right {
+            right: rem(25);
+        }
+    }
+}
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .feature {
+        display: flex;
+        flex: 1;
+        background: #f4f6fa;
+        border-radius: rem(10);
+        padding: 1rem;
+        img {
+            width: 3.3rem;
+            margin-right: 1rem;
+        }
+        .text {
+            flex-grow: 1;
+        }
+        h6 {
+            font-size: 1rem;
+        }
+    }
+}
+.category {
+    display: flex;
+    justify-content: center;
+    h2 {
+        margin-bottom: 3rem;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 1rem;
+        border-radius: rem(15);
+        color: var(--text-color);
+        border: 1px solid transparent;
+        width: rem(200);
+        min-height: rem(180);
+        img {
+            padding: 1rem;
+        }
+        span:first-of-type {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        span:last-of-type {
+            font-size: 0.7rem;
+        }
+        &:hover {
+            border-color: var(--primary);
+            box-shadow: var(--box-shadow-1);
+        }
+        &:nth-of-type(1) {
+            background: var(--primary-light);
+        }
+        &:nth-of-type(2) {
+            background: var(--blue-light);
+        }
+        &:nth-of-type(3) {
+            background: var(--red-light);
+        }
+        &:nth-of-type(4) {
+            background: var(--yellow-light);
+        }
+        &:nth-of-type(5) {
+            background: var(--green-light);
+        }
+    }
+}
+h2 {
+    margin-bottom: 3rem;
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+section {
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.4rem;
+}
+.nav {
+    display: flex;
+}
+
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    .deals {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .image-wrapper {
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .content {
+        max-width: 86%;
+        position: absolute;
+        top: 40%;
+        .timer {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0.8rem;
+            .timer-block {
+                height: 3.7rem;
+                background: var(--white);
+                display: inline-flex;
+                flex-direction: column;
+                font-size: 0.9rem;
+                flex: 1;
+                border-radius: 11px;
+                justify-content: center;
+                line-height: 1;
+                align-items: center;
+            }
+        }
+    }
+}
+.newsletter-section {
+    padding-top: 6rem;
+}
+.newsletter {
+    @extend .slider;
+    background: url("/images/slider-2.png");
+    height: 24rem;
+    position: relative;
+    h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1.3rem;
+    }
+    .newsletter-form {
+        position: relative;
+        input {
+            border: none;
+            height: 3rem;
+            width: 100%;
+            border-radius: 3rem;
+            padding-left: 2rem;
+            padding-right: 10rem;
+        }
+        button {
+            position: absolute;
+            right: 0;
+        }
+    }
+    img {
+        position: absolute;
+        max-width: 40%;
+        right: 40px;
+        bottom: 0;
+    }
+}
