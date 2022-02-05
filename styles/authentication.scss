@@ -1,0 +1,66 @@
+@import "../utils/functions.scss";
+main {
+    background: #f0f8ff;
+}
+section {
+    display: flex;
+    min-height: calc(100vh - 110px);
+    justify-content: end;
+    align-items: center;
+    width: 80vw;
+    padding: 2rem 0;
+    margin: 0 auto;
+    position: relative;
+    .authentication {
+        width: 24rem;
+        padding: 2rem;
+        border-radius: rem(30);
+        box-shadow: var(--box-shadow-1);
+        background: var(--white);
+        border: 1px solid var(--border-color-2);
+        overflow: hidden;
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            width: 48rem;
+            gap: 2rem;
+            transition: all 0.4s ease-in-out;
+        }
+        &__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .checkbox {
+            margin-bottom: 1.2rem;
+        }
+        .form__buttons {
+            button:first-child {
+                margin-bottom: 0.9rem;
+            }
+            a {
+                margin-top: 1.4rem;
+                font-size: 0.8rem;
+                display: block;
+            }
+        }
+        .signin,
+        .signup {
+            width: 20rem;
+        }
+        #showSignup i {
+            margin-left: 0.2rem;
+        }
+    }
+}
+.side-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30rem;
+}
+
+.active {
+    transform: translateX(-46%);
+}
