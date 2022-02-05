@@ -1,3 +1,220 @@
+.main {
+  margin: 1rem;
+}
 
+.slider, .newsletter {
+  background: url("/images/slider-2.png");
+  height: 26rem;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-bottom: 0;
+}
+.slider .content, .newsletter .content {
+  margin-left: 3rem;
+}
+.slider h1, .newsletter h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+.slider p, .newsletter p {
+  font-size: 1.3rem;
+  color: var(--gray-2);
+}
+.slider__icon {
+  position: absolute;
+  display: inline-flex;
+  width: 2.3rem;
+  justify-content: center;
+  height: 2.3rem;
+  color: var(--gray-2);
+  align-items: center;
+  border-radius: 50%;
+  background: var(--yellow-light);
+}
+.slider__icon.left {
+  left: 1.5625rem;
+}
+.slider__icon.right {
+  right: 1.5625rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.feature-container .feature {
+  display: flex;
+  flex: 1;
+  background: #f4f6fa;
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+.feature-container .feature img {
+  width: 3.3rem;
+  margin-right: 1rem;
+}
+.feature-container .feature .text {
+  flex-grow: 1;
+}
+.feature-container .feature h6 {
+  font-size: 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+}
+.category h2 {
+  margin-bottom: 3rem;
+}
+.category__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 0.9375rem;
+  color: var(--text-color);
+  border: 1px solid transparent;
+  width: 12.5rem;
+  min-height: 11.25rem;
+}
+.category__item img {
+  padding: 1rem;
+}
+.category__item span:first-of-type {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.category__item span:last-of-type {
+  font-size: 0.7rem;
+}
+.category__item:hover {
+  border-color: var(--primary);
+  box-shadow: var(--box-shadow-1);
+}
+.category__item:nth-of-type(1) {
+  background: var(--primary-light);
+}
+.category__item:nth-of-type(2) {
+  background: var(--blue-light);
+}
+.category__item:nth-of-type(3) {
+  background: var(--red-light);
+}
+.category__item:nth-of-type(4) {
+  background: var(--yellow-light);
+}
+.category__item:nth-of-type(5) {
+  background: var(--green-light);
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.section-title h2 {
+  margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.4rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.deals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+.deals-container .deals {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.deals-container .image-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.deals-container .content {
+  max-width: 86%;
+  position: absolute;
+  top: 40%;
+}
+.deals-container .content .timer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0.8rem;
+}
+.deals-container .content .timer .timer-block {
+  height: 3.7rem;
+  background: var(--white);
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  flex: 1;
+  border-radius: 11px;
+  justify-content: center;
+  line-height: 1;
+  align-items: center;
+}
+
+.newsletter-section {
+  padding-top: 6rem;
+}
+
+.newsletter {
+  background: url("/images/slider-2.png");
+  height: 24rem;
+  position: relative;
+}
+.newsletter h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.3rem;
+}
+.newsletter .newsletter-form {
+  position: relative;
+}
+.newsletter .newsletter-form input {
+  border: none;
+  height: 3rem;
+  width: 100%;
+  border-radius: 3rem;
+  padding-left: 2rem;
+  padding-right: 10rem;
+}
+.newsletter .newsletter-form button {
+  position: absolute;
+  right: 0;
+}
+.newsletter img {
+  position: absolute;
+  max-width: 40%;
+  right: 40px;
+  bottom: 0;
+}
 
 /*# sourceMappingURL=index.css.map */

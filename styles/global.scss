@@ -1,0 +1,182 @@
+@import "../utils/functions.scss";
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    color: var(--text-color);
+    line-height: 1.5em;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding: 0.2rem 1rem;
+    border-bottom: 1px solid var(--border-color-3);
+    a {
+        color: var(--gray-2);
+        padding: 0 0.6rem;
+        line-height: 1;
+        border-right: 1px solid var(--gray-2);
+        &:last-of-type {
+            border: none;
+        }
+        &:hover {
+            color: var(--gray-3);
+        }
+    }
+}
+.header {
+    border-bottom: 1px solid var(--border-color-3);
+    position: sticky;
+    background: #ffffff;
+    top: 0;
+    z-index: 10;
+    // box-shadow: var(--box-shadow-1);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 0.6rem 4rem;
+    }
+    &__logo {
+        width: rem(110);
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .links {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.75rem;
+            line-height: 1.2;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            color: var(--gray-1);
+            transition: 0.2s;
+            &:hover {
+                background: var(--primary-light);
+                color: var(--primary);
+            }
+            .icon-badge {
+                color: var(--text-color);
+                .badge {
+                    left: 0.8rem;
+                    top: -2px;
+                    font-size: 0.43em;
+                }
+            }
+        }
+    }
+    .search__container {
+        padding: 0.5rem 1rem;
+        border: 1px solid #d5d5d5;
+        border-radius: 0.5rem;
+        min-width: 37rem;
+        display: flex;
+        height: 2.6rem;
+        align-items: center;
+        margin-left: 5rem;
+        select {
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url("/images/down.png") no-repeat;
+            background-position: 80px 8px;
+            width: 6rem;
+            height: rem(30);
+            text-indent: 0.01px;
+            text-overflow: "";
+            color: var(--primary);
+            font-weight: 500;
+            border-right: 1px solid var(--gray-3);
+            cursor: pointer;
+            margin-right: 0.6rem;
+            &:focus {
+                outline: none;
+            }
+        }
+        input {
+            flex: 1;
+            border: none;
+            font-size: 0.9rem;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    background: #242424;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    color: var(--white);
+    font-size: 0.9rem;
+
+    .footer-item {
+        flex: 1;
+    }
+    .brand {
+        display: flex;
+        flex-direction: column;
+        span:first-of-type {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    a {
+        color: #8f8f8f;
+        font-weight: normal;
+        line-height: 2.2;
+        &:hover {
+            color: var(--white);
+        }
+    }
+    .info {
+        li {
+            color: #8f8f8f;
+            margin-bottom: 1rem;
+            i {
+                color: var(--primary);
+            }
+            span {
+                margin: 0 0.5rem;
+                font-weight: 500;
+                color: var(--white);
+            }
+            &:last-of-type {
+                color: var(--primary);
+            }
+        }
+    }
+}
