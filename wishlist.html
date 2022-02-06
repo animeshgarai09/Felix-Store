@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://felix-ui-testing.netlify.app/components/main.css" />
+        <!-- <link rel="stylesheet" href="/components/main.css" /> -->
+        <script src="https://kit.fontawesome.com/d98a516469.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/wishlist.css" />
+        <title>Wishlist | Felix store</title>
+    </head>
+    <body>
+        <div class="sub-header">
+            <div class="left">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Order Tracking</a>
+                <!-- <a href="#">Order tracking</a> -->
+            </div>
+            <div class="right">
+                <span>Need help? Call Us: 0000 000000</span>
+                <a href="#">Contact Us</a>
+                <a href="https://github.com/animeshgarai09"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/animeshgarai09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/animesh-garai-29a5251b4"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:animeshgarai09@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__wrapper">
+                <a href="/"> <img src="/images/felix.png" class="header__logo" alt="" /></a>
+                <div class="search__container">
+                    <select name="cars" id="cars">
+                        <option value="volvo">All Category</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <input type="text" placeholder="Search for item..." />
+                    <i class="fas fa-search"></i>
+                </div>
+                <nav class="header__links">
+                    <a href="#" class="links">
+                        <span class="icon-badge">
+                            <span class="badge badge--primary">2</span>
+                            <i class="far fa-bell"></i>
+                        </span>
+                        Wishlist
+                    </a>
+                    <a href="#" class="links">
+                        <span class="icon-badge">
+                            <span class="badge badge--primary">99+</span>
+                            <i class="fas fa-shopping-basket"></i>
+                        </span>
+                        Basket
+                    </a>
+                    <a href="#" class="links">
+                        <span class="icon-badge">
+                            <i class="far fa-user-circle"></i>
+                        </span>
+                        Account
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <h3>My Wishlist</h3>
+                    <p>You have 3 items in wishlist</p>
+                    <div class="container__wrapper">
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card vertical">
+                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                            <div class="card__image">
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-item brand">
+                <a href="/"> <img src="/images/felix.png" class="header__logo" alt="" /></a>
+                <span>Your one stop organic grocery store</span>
+                <span>© 2021, All rights reserved</span>
+                <span>Made with <i class="fas fa-heart"></i> by <a href="https://portfolio-alpha-liart.vercel.app/" class="text-warning"> Animesh Garai</a> </span>
+                <div class="footer__links">
+                    <a href="https://github.com/animeshgarai09"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/animeshgarai09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/animesh-garai-29a5251b4"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:animeshgarai09@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-item footer-links">
+                <h5>Categories</h5>
+                <ul class="links">
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#" #>Fruits</a></li>
+                    <li><a href="#">Organic Products</a></li>
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#">Groceries</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-links">
+                <h5>Account</h5>
+                <ul class="links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">View Basket</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-item info">
+                <h5>Contact Us</h5>
+                <ul class="links">
+                    <li><i class="fas fa-map-marker-alt"></i><span>Location: </span> Gpoinathpur, Kolkata West Bengal - 722101</li>
+                    <li><i class="fas fa-map-marker-alt"></i><span>Call Us: </span>+91 0000 000000</li>
+                    <li><i class="fas fa-map-marker-alt"></i><span>Email: </span>animeshgarai09@gmail.com</li>
+                    <li>Always here to serve your needs</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

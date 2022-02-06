@@ -1,0 +1,15 @@
+section {
+  width: 91.3333vw;
+  margin: 0 auto;
+  min-height: calc(100vh - 110px);
+}
+section .container {
+  padding: 3rem 1rem;
+}
+section .container__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.4rem;
+}
+
+/*# sourceMappingURL=wishlist.css.map */
