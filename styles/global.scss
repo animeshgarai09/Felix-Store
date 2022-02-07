@@ -69,6 +69,10 @@ body {
         align-items: center;
         padding: 0.6rem 4rem;
     }
+    .sub__wrapper {
+        display: flex;
+        align-items: center;
+    }
     &__logo {
         width: rem(110);
     }
@@ -96,6 +100,9 @@ body {
                     top: -2px;
                     font-size: 0.43em;
                 }
+                i {
+                    margin: 0;
+                }
             }
         }
     }
@@ -107,7 +114,7 @@ body {
         display: flex;
         height: 2.6rem;
         align-items: center;
-        margin-left: 2rem;
+        margin-right: 4rem;
         select {
             border: none;
             -webkit-appearance: none;

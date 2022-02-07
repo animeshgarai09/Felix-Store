@@ -31,38 +31,46 @@
         <header class="header">
             <div class="header__wrapper">
                 <a href="/"> <img src="/images/felix.png" class="header__logo" alt="" /></a>
-                <div class="search__container">
-                    <select name="cars" id="cars">
-                        <option value="volvo">All Category</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                    <input type="text" placeholder="Search for item..." />
-                    <i class="fas fa-search"></i>
+                <div class="sub__wrapper">
+                    <div class="search__container">
+                        <select name="cars" id="cars">
+                            <option value="volvo">All Category</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <input type="text" placeholder="Search for item..." />
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <nav class="header__links">
+                        <a href="/shop.html" class="links">
+                            <span class="icon-badge">
+                                <i class="fas fa-store"></i>
+                            </span>
+                            Shop
+                        </a>
+                        <a href="/wishlist.html" class="links">
+                            <span class="icon-badge">
+                                <span class="badge badge--primary">2</span>
+                                <i class="far fa-bell"></i>
+                            </span>
+                            Wishlist
+                        </a>
+                        <a href="/basket.html" class="links">
+                            <span class="icon-badge">
+                                <span class="badge badge--primary">99+</span>
+                                <i class="fas fa-shopping-basket"></i>
+                            </span>
+                            Basket
+                        </a>
+                        <a href="/authentication.html" class="links">
+                            <span class="icon-badge">
+                                <i class="far fa-user-circle"></i>
+                            </span>
+                            Account
+                        </a>
+                    </nav>
                 </div>
-                <nav class="header__links">
-                    <a href="#" class="links">
-                        <span class="icon-badge">
-                            <span class="badge badge--primary">2</span>
-                            <i class="far fa-bell"></i>
-                        </span>
-                        Wishlist
-                    </a>
-                    <a href="#" class="links">
-                        <span class="icon-badge">
-                            <span class="badge badge--primary">99+</span>
-                            <i class="fas fa-shopping-basket"></i>
-                        </span>
-                        Basket
-                    </a>
-                    <a href="#" class="links">
-                        <span class="icon-badge">
-                            <i class="far fa-user-circle"></i>
-                        </span>
-                        Account
-                    </a>
-                </nav>
             </div>
         </header>
         <main>
@@ -74,7 +82,7 @@
                                 <h3>My Basket</h3>
                                 <p>You have 3 items in basket</p>
                             </div>
-                            <button class="btn btn--sm btn--danger btn--round btn--ghost">Remove All</button>
+                            <button class="btn btn--sm btn--danger btn--round btn--ghost transform-none">Remove All</button>
                         </div>
 
                         <div>

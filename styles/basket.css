@@ -1,6 +1,7 @@
 section {
   width: 91.3333vw;
   margin: 0 auto;
+  min-height: calc(100vh - 110px);
 }
 section .info {
   display: flex;
@@ -21,9 +22,8 @@ section .item-price__container {
   width: 35%;
   border-left: 1px solid var(--border-color-3);
   padding: 0 2rem;
-  height: calc(100vh - 110px);
   min-width: 18rem;
-  overflow-x: auto;
+  height: min-content;
 }
 section .coupon__container {
   display: flex;

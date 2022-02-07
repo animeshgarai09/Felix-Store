@@ -8,8 +8,8 @@
         <!-- <link rel="stylesheet" href="/components/main.css" /> -->
         <script src="https://kit.fontawesome.com/d98a516469.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/wishlist.css" />
-        <title>Wishlist | Felix store</title>
+        <link rel="stylesheet" href="styles/product.css" />
+        <title>Products | Felix store</title>
     </head>
     <body>
         <div class="sub-header">
@@ -76,18 +76,77 @@
         <main>
             <section>
                 <div class="container">
-                    <h3>My Wishlist</h3>
-                    <p>You have 3 items in wishlist</p>
-                    <div class="container__wrapper">
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                    <aside class="filter__wrapper">
+                        <div class="side category__container">
+                            <h5>Categories</h5>
+                            <input type="checkbox" value="Vegetables" />
+                            <label for="vehicle1"> Vegetables</label>
+                            <input type="checkbox" value="Fruits" />
+                            <label for="vehicle2"> Fruits</label>
+                            <input type="checkbox" value="Boat" />
+                            <label for="vehicle3"> Plants</label>
+                        </div>
+
+                        <div class="side filter__container">
+                            <div class="control">
+                                <h5>Filters</h5>
+                                <button class="btn btn--xs btn--danger btn--round btn--ghost">Clear All</button>
+                            </div>
+                            <div class="range">
+                                <div class="slider">
+                                    <input type="range" min="0" max="100" step="0.1" value="0" />
+                                    <div class="track">
+                                        <div class="track-inner"></div>
+                                    </div>
+                                    <div class="thumb"></div>
+                                </div>
+                                <div class="range-value">
+                                    <span>From: <span>120</span> </span>
+                                    <span>To: <span>3000</span></span>
+                                </div>
+                            </div>
+                            <span class="heading">Sort By</span>
+                            <ul>
+                                <li>
+                                    <label><input type="checkbox" class="subOption" /> Price - Low to high</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" class="subOption" /> Price - High to low</label>
+                                </li>
+                            </ul>
+                            <span class="heading">Rating</span>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="f-option" name="selector" />
+                                    <label for="f-option">4 Star & above</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="s-option" name="selector" />
+                                    <label for="s-option">3 Star & above</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="t-option" name="selector" />
+                                    <label for="t-option">2 Star & above</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="t-option" name="selector" />
+                                    <label for="t-option">1 Star & above</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="product__container">
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -95,21 +154,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -117,21 +176,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -139,21 +198,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -161,21 +220,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -183,21 +242,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -205,21 +264,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -227,21 +286,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -249,21 +308,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -271,21 +330,21 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card vertical">
-                            <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
+                        <div class="card vertical small">
                             <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
                                 <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                             </div>
                             <div class="card__content">
                                 <a class="card__category" href="#">Food</a>
                                 <a class="card__name" href="#">Angie’s Boomchickapop Sweet &amp; Salty</a>
-                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
                                 <span class="card__vendor">By <a href="">Nestle</a></span>
                                 <div class="card__bottom">
                                     <div class="card__price">
@@ -293,8 +352,8 @@
                                         <span>Rs. 339</span>
                                     </div>
                                     <div class="card__button_con">
-                                        <!-- <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button> -->
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add to basket</button>
+                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -347,5 +406,21 @@
                 </ul>
             </div>
         </footer>
+
+        <script>
+            const range = document.querySelector(".range")
+            const thumb = document.querySelector(".thumb")
+            const track = document.querySelector(".track-inner")
+
+            const updateSlider = (value) => {
+                thumb.style.left = `${value}%`
+                thumb.style.transform = `translate(-${value}%, -50%)`
+                track.style.width = `${value}%`
+            }
+
+            range.oninput = (e) => updateSlider(e.target.value)
+
+            updateSlider(50)
+        </script>
     </body>
 </html>
