@@ -68,6 +68,10 @@ body {
   align-items: center;
   padding: 0.6rem 4rem;
 }
+.header .sub__wrapper {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
   width: 6.875rem;
 }
@@ -98,6 +102,9 @@ body {
   top: -2px;
   font-size: 0.43em;
 }
+.header__links .links .icon-badge i {
+  margin: 0;
+}
 .header .search__container {
   padding: 0.5rem 1rem;
   border: 1px solid #d5d5d5;
@@ -106,7 +113,7 @@ body {
   display: flex;
   height: 2.6rem;
   align-items: center;
-  margin-left: 2rem;
+  margin-right: 4rem;
 }
 .header .search__container select {
   border: none;
